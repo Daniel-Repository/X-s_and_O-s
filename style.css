@@ -76,6 +76,9 @@ main {
 #game .square {
     border-color: black;
     border-width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #game .square:hover {
@@ -117,4 +120,26 @@ main {
 #game #square-bottom-right {
     border-style: solid none none solid;
 }
+
+
+/* Additions to board */
+
+.cross {
+    background: black;
+    height: 90px;
+    position: absolute;
+    width: 5px;
+    transform: rotate(45deg);
+  }
+
+.cross:after {
+    background: black;
+    content: "";
+    height: 5px;
+    left: -40px;
+    position: absolute;
+    top: 40px;
+    width: 90px;
+}
+
 

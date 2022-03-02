@@ -15,6 +15,14 @@ for (let i of gameBoard.children) {
     gameSquares.push(i);
 }
 
+for (let i of gameSquares) {
+    i.addEventListener("click", () => {
+        const span = document.createElement('span');
+        span.classList.add('cross');
+        i.appendChild(span);
+    });
+}
+
 
 
 
