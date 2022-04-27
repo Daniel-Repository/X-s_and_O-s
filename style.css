@@ -150,6 +150,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 /* GAME BOARD */
@@ -236,5 +237,9 @@ main {
     width: 80px;
     border-radius: 50%;
     border: 5px solid black;
+}
 
+.resetButton {
+    margin: 50px;
+    padding: 20px;
 }
